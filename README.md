@@ -27,6 +27,7 @@ Data Complexity: Integrating diverse data sources (remote sensing, farm records)
 Similar Crop Traits: Crops with overlapping requirements (e.g., wheat and barley) complicate classification.
 Climate Variability: Unpredictable weather patterns disrupt traditional models.
 Data Overlap: Soil and pest data must be carefully separated for accurate recommendations.
+
 SVM-BASED CROP RECOMMENDATION SYSTEM
 
 The proposed system uses SVM due to its effectiveness with high-dimensional agricultural data. Key steps:
@@ -34,6 +35,7 @@ Data Preprocessing: Handles missing values, normalizes features, and applies one
 Feature Selection: Prioritizes soil nutrients (N, P, K), temperature, and rainfall.
 Model Training: Optimizes hyperparameters (C, gamma) via grid search and cross-validation.
 Recommendation Engine: Suggests crops based on input conditions and provides yield insights.
+
 METHODS
 
 Data Collection: 15,000 records with soil pH, N/P/K levels, temperature, humidity, and crop types.
@@ -43,12 +45,14 @@ Random Forest (RF): 92.5% accuracy.
 Gradient Boosting (GBM): 94.2% accuracy.
 Deep Neural Network (DNN): 95.8% accuracy (best performer).
 Evaluation Metrics:** Accuracy, precision, recall, and F1-score.
+
 RESULTS & DISCUSSION
 
 DNN achieved the highest accuracy (95.8%) but required significant computational power.
 GBM balanced performance and efficiency (93.6% F1-score).
 Data augmentation improved rare crop detection by 8.5%.
 Critical features: Soil nitrogen, temperature, and rainfall.
+
 LIMITATIONS
 
 Data Dependency: Relies on region-specific datasets; struggles with incomplete data.
